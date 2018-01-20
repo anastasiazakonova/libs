@@ -8,8 +8,8 @@ from copy import deepcopy
 from lib_objects import Subject, is_geo
 from lib_nlp import morph
 
-re_alphanum = re.compile('[^а-яА-Яa-zA-Z0-9ё,.()№"!—?«»-]')
-re_betanum = re.compile('[а-яА-Яё]')
+re_alphanum = re.compile('[^а-яa-zA-Z0-9ё,.()№"!—?«»-]')
+re_betanum = re.compile('[а-яё]')
 
 
 def tokenize(text):
